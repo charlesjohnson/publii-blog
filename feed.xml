@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Chip Writes Stuff</title>
-    <link href="https://chipadeedoodah.com/feed.xml" rel="self" />
-    <link href="https://chipadeedoodah.com" />
+    <link href="https://www.chipadeedoodah.com/feed.xml" rel="self" />
+    <link href="https://www.chipadeedoodah.com" />
     <updated>1969-12-31T16:00:00-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
-    <id>https://chipadeedoodah.com</id>
+    <id>https://www.chipadeedoodah.com</id>
 
 </feed>

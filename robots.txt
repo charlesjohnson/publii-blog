@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://chipadeedoodah.com/sitemap.xml
+Sitemap: https://www.chipadeedoodah.com/sitemap.xml
