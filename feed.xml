@@ -3,12 +3,115 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2022-11-07T10:52:00-08:00</updated>
+    <updated>2022-11-08T18:16:29-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
     <id>https://blog.chipjohnson.net</id>
 
+    <entry>
+        <title>An Obvious Thing About the Cloud</title>
+        <author>
+            <name>Chip Johnson</name>
+        </author>
+        <link href="https://blog.chipjohnson.net/the-obvious-thing-about-the-cloud.html"/>
+        <id>https://blog.chipjohnson.net/the-obvious-thing-about-the-cloud.html</id>
+        <media:content url="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" medium="image" />
+            <category term="DevOps"/>
+            <category term="Cloud"/>
+            <category term="AWS"/>
+
+        <updated>2022-11-08T18:16:29-08:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" alt="Abandoned computer equipment" />
+                    (This post started life as a Twitter thread.) There's a blog post by DHH that's getting lots of traction that I won't link here because he doesn't deserve the traffic. He says some things that seem so stunningly obvious to me as not to be&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" class="type:primaryImage" alt="Abandoned computer equipment" /></p>
+                
+  <p class="msg msg--info">
+    <i>(This post started life as a Twitter thread.)</i>
+  </p>
+
+  <p>
+    There's a blog post by DHH that's getting lots of traction that I won't link here because he doesn't deserve the traffic. He says some things that seem so stunningly obvious to me as not to be worth talking about, but he managed to get 1,000 words and a 30-minute blog post out of it, so hey! I guess it is worth talking about!
+  </p>
+
+  <p>
+    Here's your tl;dr: The folks at 37signals have predictable workloads and a lot of in-house expertise in running server &amp; network infrastructure. So they ran the numbers and figured out they'd save a lot of money by moving all of their applications out of the cloud and onto self-managed infrastructure.
+  </p>
+
+  <p>
+    <b>It should be obvious, but if you have predictable workloads and in-house infrastructure expertise, you will probably save money running your own infrastructure instead of using AWS.</b><br>
+  </p>
+
+  <p>
+    That's it. That's the tweet. But DHH presents this as a <b>stunning revelation</b> when in reality, it's... Yeah? No shit? You can use excel; congratulations. If I knew this silly little thought would blow minds, I'd have been saying it louder through the years.
+  </p>
+
+  <p>
+    Look, the cloud was designed for rapid time-to-market. And it works! The barriers to creating a thing on the internet used to be enormous and expensive. The cloud tore those obstacles down! Now, if you want to create a wholly new experience on the internet, you can go home and get that idea in front of people before you go to sleep tonight. That's incredible! The number of people running workloads on the internet is many, many times greater than it was when, as DDH put it, "Everyone &amp; their dog [ran infrastructure] to get the internet off the ground."
+  </p>
+
+  <p>
+    My dog &amp; I also waited six months for the data center to provision new servers, my dude. People today don't have that problem. They put in a credit card number and have all the computing power they need, billed by the hour.
+  </p>
+
+    <figure class="blockquote">
+      <blockquote>The world doesn't need thousands of people who can expertly tune postfix, SpamAssassin, and ClamAV—the world has Gmail.</blockquote>
+      <figcaption>Charity Majors</figcaption>
+    </figure>
+
+  <p>
+    In a recent article, Charity Majors <a href="https://www.honeycomb.io/blog/future-ops-platform-engineering" target="_blank">wrote about the bifurcation of infrastructure engineering and operations engineering</a>. Infrastructure engineering is commoditizing because every company needs it, and no company can differentiate on it. On the other hand, operations engineering is getting a new name because we're technologists, and <i style="font-weight: bold;">that's what we do here,</i>&nbsp;and we seem to have settled on Platform Engineering. The industry built a tollgated API between the roles and decoupled them because infrastructure commoditization makes sense, but platform engineering remains mostly bespoke.
+  </p>
+
+  <p>
+    To put it another way: Running servers? As Jeff Barr says, that's <a href="https://aws.amazon.com/blogs/aws/we_build_muck_s/" target="_blank">undifferentiated heavy lifting</a>. But running my site and services? You bet your ass that my company runbook is a trade secret.
+  </p>
+
+  <p>
+    <i>(A brief aside: Kubernetes is the foundation of the latest attempt to commodify operations expertise. It's going better than the last couple of dozen times people tried this, but it's still not there. A true Kubernetes expert currently costs about $500k/year, and they're worth every penny. So... not a commodity.)</i>
+  </p>
+
+  <p>
+    So what does this all mean? First, you can be a tech company without any infrastructure expertise. You can do it <i>in minutes</i> with just a credit card. You can put all your focus on the parts that are right next to your customers. And it means that in those early days of pinching pennies and wild swings in requirements, when you might need a memory cache one day and a bunch of web servers the next, and then you need to <b>stop paying for all of that ASAP</b>, you can adapt before you wind up dead.&nbsp;
+  </p>
+
+  <p>
+    These are <i>superpowers.</i>&nbsp;It is <i>awesome</i>.
+  </p>
+
+  <p>
+    But once your product has matured, growth is steady, and you can make accurate predictions about your customer usage, all that flexibility stops meaning very much. And like most things rented by the hour, it's expensive when you add it up to weeks, months, and years. So when you've got time to breathe and look around, you might find yourself with infrastructure expertise and a vast cloud bill.
+  </p>
+
+  <p>
+    I'm just going to say it again: <b>If you have predictable workloads and in-house infrastructure expertise, you will probably save money running your own infrastructure instead of using AWS.</b><br>
+  </p>
+
+  <p>
+    What a dull, obvious sentence! I think it's boring, anyway. I got bored saying it to you. But leave it to a polemicist to turn a sensible business decision into a, uh, polemic:
+  </p>
+
+    <figure class="blockquote">
+      <blockquote>Up until very recently, everyone ran their own servers, and much of the progress in tooling that enabled the cloud is available for your own machines as well. Don't let the entrenched cloud interests dazzle you into believing that running your own setup is too complicated...&nbsp;It's time to part the clouds and let the internet shine through.</blockquote>
+      <figcaption>David heinemeier Hansson (DHH)</figcaption>
+    </figure>
+
+  <p>
+    Fuck right off with this attitude. If a product is no longer for you, don't buy it. But the cloud has done wonders to lower barriers to access and democratize the internet.
+  </p>
+
+  <p>
+    Doing commoditized things in-house makes sense at some scales. But it's not a political act; it's an economic one. Don't let nostalgia for the days when you kept the dark magicks of <code>make installworld</code> for yourself convince you otherwise.
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>November Election 2022</title>
         <author>
