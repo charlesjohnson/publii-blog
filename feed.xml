@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2022-11-10T10:05:27-08:00</updated>
+    <updated>2022-11-10T10:11:43-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -14,14 +14,14 @@
         <author>
             <name>Chip Johnson</name>
         </author>
-        <link href="https://blog.chipjohnson.net/the-obvious-thing-about-the-cloud.html"/>
-        <id>https://blog.chipjohnson.net/the-obvious-thing-about-the-cloud.html</id>
+        <link href="https://blog.chipjohnson.net/an-obvious-thing-about-the-cloud.html"/>
+        <id>https://blog.chipjohnson.net/an-obvious-thing-about-the-cloud.html</id>
         <media:content url="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" medium="image" />
             <category term="DevOps"/>
             <category term="Cloud"/>
             <category term="AWS"/>
 
-        <updated>2022-11-10T10:05:27-08:00</updated>
+        <updated>2022-11-10T10:11:43-08:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" alt="Abandoned computer equipment" />
