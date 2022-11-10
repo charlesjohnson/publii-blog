@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2022-11-08T18:16:29-08:00</updated>
+    <updated>2022-11-10T10:05:27-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -21,11 +21,11 @@
             <category term="Cloud"/>
             <category term="AWS"/>
 
-        <updated>2022-11-08T18:16:29-08:00</updated>
+        <updated>2022-11-10T10:05:27-08:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" alt="Abandoned computer equipment" />
-                    (This post started life as a Twitter thread.) There's a blog post by DHH that's getting lots of traction that I won't link here because he doesn't deserve the traffic. He says some things that seem so stunningly obvious to me as not to be&hellip;
+                    (This post started life as a Twitter thread.) There's a blog post by DHH that's getting lots of traction lately about how his company, 37signs, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -33,31 +33,31 @@
                     <p><img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" class="type:primaryImage" alt="Abandoned computer equipment" /></p>
                 
   <p class="msg msg--info">
-    <i>(This post started life as a Twitter thread.)</i>
+    <i>(This post started life as a <a href="https://twitter.com/JefrsonStarChip/status/1583220749594071040?s=20&amp;t=v3KaY_evH0bkAp-6LugbVw">Twitter thread</a>.)</i>
   </p>
 
   <p>
-    There's a blog post by DHH that's getting lots of traction that I won't link here because he doesn't deserve the traffic. He says some things that seem so stunningly obvious to me as not to be worth talking about, but he managed to get 1,000 words and a 30-minute blog post out of it, so hey! I guess it is worth talking about!
+    There's a blog post by DHH that's getting lots of traction lately about how his company, 37signs, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He says some things that seem so stunningly obvious to me they're not worth talking about, but he managed to get 1,000 words, countless page views, and a 30-minute podcast out of it, so hey! I guess maybe it is worth talking about!
   </p>
 
   <p>
-    Here's your tl;dr: The folks at 37signals have predictable workloads and a lot of in-house expertise in running server &amp; network infrastructure. So they ran the numbers and figured out they'd save a lot of money by moving all of their applications out of the cloud and onto self-managed infrastructure.
+    Here's your tl;dr: The folks at 37signals have predictable workloads and a lot of in-house expertise around running servers &amp; networks in a data center. So they ran the numbers and figured out they'd save a lot of money by moving all of their applications out of the cloud and onto self-managed infrastructure.&nbsp;
   </p>
 
   <p>
-    <b>It should be obvious, but if you have predictable workloads and in-house infrastructure expertise, you will probably save money running your own infrastructure instead of using AWS.</b><br>
+    That's it. That's the tweet. But DHH presents this as a stunning revelation when in reality, it's... Yeah? No shit? You can use excel; congratulations. If I knew this silly little thought would blow minds, I'd have been saying it louder through the years.
   </p>
 
   <p>
-    That's it. That's the tweet. But DHH presents this as a <b>stunning revelation</b> when in reality, it's... Yeah? No shit? You can use excel; congratulations. If I knew this silly little thought would blow minds, I'd have been saying it louder through the years.
+    <b>It should be obvious, but if you have predictable workloads and in-house infrastructure expertise, you will probably save money running your own infrastructure instead of using AWS.</b><br><br>Look, cloud hosting <i>can</i> run mature, low-maintenance apps for you. But that's not what it's for. The cloud was designed for rapid time-to-market. And it works! Now, if you want to create a wholly new experience on the internet, you can go home and get that idea in front of people before you go to sleep tonight. That's incredible.
   </p>
 
   <p>
-    Look, the cloud was designed for rapid time-to-market. And it works! The barriers to creating a thing on the internet used to be enormous and expensive. The cloud tore those obstacles down! Now, if you want to create a wholly new experience on the internet, you can go home and get that idea in front of people before you go to sleep tonight. That's incredible! The number of people running workloads on the internet is many, many times greater than it was when, as DDH put it, "Everyone &amp; their dog [ran infrastructure] to get the internet off the ground."
+    The barriers to creating a thing on the internet used to be enormous and expensive until the cloud tore those obstacles down. As a result, the number of people running workloads on the internet is many, many times greater than it was when, as DDH put it, "Everyone &amp; their dog [ran infrastructure] to get the internet off the ground."
   </p>
 
   <p>
-    My dog &amp; I also waited six months for the data center to provision new servers, my dude. People today don't have that problem. They put in a credit card number and have all the computing power they need, billed by the hour.
+    <i>My dog &amp; I also waited six months for Rackspace.com to provision new servers, my dude. </i>People today don't have that problem. They put in a credit card number and have all the computing power they need, billed by the hour.
   </p>
 
     <figure class="blockquote">
@@ -66,7 +66,7 @@
     </figure>
 
   <p>
-    In a recent article, Charity Majors <a href="https://www.honeycomb.io/blog/future-ops-platform-engineering" target="_blank">wrote about the bifurcation of infrastructure engineering and operations engineering</a>. Infrastructure engineering is commoditizing because every company needs it, and no company can differentiate on it. On the other hand, operations engineering is getting a new name because we're technologists, and <i style="font-weight: bold;">that's what we do here,</i>&nbsp;and we seem to have settled on Platform Engineering. The industry built a tollgated API between the roles and decoupled them because infrastructure commoditization makes sense, but platform engineering remains mostly bespoke.
+    In a recent article, Charity Majors <a href="https://www.honeycomb.io/blog/future-ops-platform-engineering" target="_blank">wrote about the bifurcation of infrastructure engineering and operations engineering</a>. Infrastructure engineering is commoditizing because every company needs it, and no company can differentiate on it. On the other hand, operations engineering is getting a new name because we're technologists,&nbsp;<i style="font-weight: bold;">that's what we do here,</i>&nbsp;and we seem to have settled on Platform Engineering. Because infrastructure commoditization makes sense, while platform engineering remains mostly bespoke, the tides of economic inevitability crashed. Someone figured out they could build a tollgated API between the roles as they decoupled, and we call that API the cloud.
   </p>
 
   <p>
@@ -74,11 +74,11 @@
   </p>
 
   <p>
-    <i>(A brief aside: Kubernetes is the foundation of the latest attempt to commodify operations expertise. It's going better than the last couple of dozen times people tried this, but it's still not there. A true Kubernetes expert currently costs about $500k/year, and they're worth every penny. So... not a commodity.)</i>
+    <i>(A brief aside: Kubernetes is the foundation of the latest attempt to commodify operations expertise. It's going better than the last couple of dozen times people tried to do this, but it's still not there. A true Kubernetes expert currently costs about $500k/year, and they're worth every penny. So... not a commodity.)</i>
   </p>
 
   <p>
-    So what does this all mean? First, you can be a tech company without any infrastructure expertise. You can do it <i>in minutes</i> with just a credit card. You can put all your focus on the parts that are right next to your customers. And it means that in those early days of pinching pennies and wild swings in requirements, when you might need a memory cache one day and a bunch of web servers the next, and then you need to <b>stop paying for all of that ASAP</b>, you can adapt before you wind up dead.&nbsp;
+    What does this all mean? First, you can be a tech company without any infrastructure expertise. You can do it <i>in minutes</i> with just a credit card. You can ignore the infrastructure parts and put all your focus square on your customers. And it means that in those early days of pinching pennies and wild swings in requirements, when you might need a memory cache one day and a bunch of web servers the next, until you need to <b>stop paying for all of that ASAP </b>to try something else, you can adapt before you wind up dead.
   </p>
 
   <p>
@@ -86,7 +86,7 @@
   </p>
 
   <p>
-    But once your product has matured, growth is steady, and you can make accurate predictions about your customer usage, all that flexibility stops meaning very much. And like most things rented by the hour, it's expensive when you add it up to weeks, months, and years. So when you've got time to breathe and look around, you might find yourself with infrastructure expertise and a vast cloud bill.
+    But once your product has matured, growth is steady, and you can make accurate predictions about your customer usage, all that flexibility stops meaning very much. And like most things rented by the hour, the cloud is expensive when you add it up to weeks, months, and years. So when you've got time to breathe and look around, you might find yourself a vast cloud bill. And if you've got the chops and some free time, well...
   </p>
 
   <p>
