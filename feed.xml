@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2022-11-10T10:11:43-08:00</updated>
+    <updated>2022-11-10T11:13:20-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -21,11 +21,11 @@
             <category term="Cloud"/>
             <category term="AWS"/>
 
-        <updated>2022-11-10T10:11:43-08:00</updated>
+        <updated>2022-11-10T11:13:20-08:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" alt="Abandoned computer equipment" />
-                    (This post started life as a Twitter thread.) There's a blog post by DHH that's getting lots of traction lately about how his company, 37signs, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He&hellip;
+                    (This post started life as a Twitter thread.) There's a blog post by DHH that's getting lots of traction lately about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -37,7 +37,7 @@
   </p>
 
   <p>
-    There's a blog post by DHH that's getting lots of traction lately about how his company, 37signs, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He says some things that seem so stunningly obvious to me they're not worth talking about, but he managed to get 1,000 words, countless page views, and a 30-minute podcast out of it, so hey! I guess maybe it is worth talking about!
+    There's a blog post by DHH that's getting lots of traction lately about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He says some things that seem so stunningly obvious to me they're not worth talking about, but he managed to get 1,000 words, countless page views, and a 30-minute podcast out of it, so hey! I guess maybe it is worth talking about!
   </p>
 
   <p>
@@ -82,7 +82,7 @@
   </p>
 
   <p>
-    These are <i>superpowers.</i>&nbsp;It is <i>awesome</i>.
+    These are <i>superpowers.</i>&nbsp;It is <i>awesome</i>.&nbsp;DevOps isn't dead, it's alive and well, and you can buy it off the shelf.
   </p>
 
   <p>
@@ -99,7 +99,7 @@
 
     <figure class="blockquote">
       <blockquote>Up until very recently, everyone ran their own servers, and much of the progress in tooling that enabled the cloud is available for your own machines as well. Don't let the entrenched cloud interests dazzle you into believing that running your own setup is too complicated...&nbsp;It's time to part the clouds and let the internet shine through.</blockquote>
-      <figcaption>David heinemeier Hansson (DHH)</figcaption>
+      <figcaption>David Heinemeier Hansson (DHH)</figcaption>
     </figure>
 
   <p>
