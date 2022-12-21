@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2022-12-20T13:53:14-08:00</updated>
+    <updated>2022-12-20T21:39:06-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -21,11 +21,11 @@
             <category term="DevOps"/>
             <category term="Cloud"/>
 
-        <updated>2022-12-20T13:53:14-08:00</updated>
+        <updated>2022-12-20T21:39:06-08:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/4/IMG_8245-2.PNG" alt="" />
-                    Say what you will about Twitter and its impact on our culture, but you can't deny that the people building it did so with passion and care. Since the end of October, when the company was bought out and taken private, those creators have watched&hellip;
+                    Say what you will about Twitter and its impact on our culture, but you can't deny that the people building it acted with passion and care. Since the end of October, when the company was bought out and taken private, those creators have watched helplessly&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -33,11 +33,11 @@
                     <p><img src="https://blog.chipjohnson.net/media/posts/4/IMG_8245-2.PNG" class="type:primaryImage" alt="" /></p>
                 
   <p>
-    Say what you will about Twitter and its impact on our culture, but you can't deny that the people building it did so with passion and care. Since the end of October, when the company was bought out and taken private, those creators have watched helplessly as the new owners transformed the company and the project born of their dedication into something else entirely.<br>
+    Say what you will about Twitter and its impact on our culture, but you can't deny that the people building it acted with passion and care. Since the end of October, when the company was bought out and taken private, those creators have watched helplessly as the new owners transformed the company and the project born of their dedication into something else entirely.<br>
   </p>
 
   <p>
-    Before Twitter's change in management, people had been wary of what the company's famously capricious billionare&nbsp; might do, but the reality turned out to be far crueler than imagined. Conversations lamenting the destruction from current and former Twitter employees have dominated tech social media.<br>
+    Before the change in management, many people working at Twitter had been wary of what the company's famously capricious billionaire suitor might do. But the reality turned out to be far crueler than they'd imagined, and conversations lamenting the destruction from current and former Twitter employees have dominated tech social media.<br>
   </p>
 
   <p>
@@ -67,7 +67,7 @@
 <div><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/4yuiIew6Lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 
   <p>
-    As the lead systems admin on their infrastructure, I routinely put in 80-hour weeks with 24/7 on-call. I spent days sleeping on cots in data centers and eating fast food in the conference room, never seeing the sun while we racked giant SAN clusters and live-migrated data. I wrote tooling and put the best of my creativity and life into the project. I have stories about being wrecked out of my mind at a New Year's Eve party with a half-dozen other sysadmin friends, all of us slurring into a speakerphone at a poor NOC technician about how to kill and safely restart a desynched JBoss cluster.
+    As the lead systems admin on their infrastructure, I routinely put in 80-hour weeks with 24/7 on-call. I spent days sleeping on cots in warehouse data centers and eating fast food in the conference room, never seeing the sun while we racked giant SAN clusters and live-migrated data. I wrote tooling and put the best of my creativity and life into the project. Get me in the right mood, and I might tell you the story about being wrecked out of my mind at a New Year's Eve party with a half-dozen other sysadmin friends, all of us slurring into a speakerphone at a poor NOC technician about how to kill and safely restart a desynched JBoss cluster.
   </p>
 
   <p>
@@ -92,11 +92,11 @@
   </p>
 
   <p>
-    In the fifteen years since Amp'd Mobile folded up, I've been part of a few more lights out events and have watched others experience them for the first time. Dozens of my colleagues and friends have wrestled with these same questions. It hasn't been easy for anyone; some have become quite bitter.
+    In the fifteen years since Amp'd Mobile folded up, I've been part of a few more Lights Out events and have watched others experience them for the first time. I've tried to be there for dozens of my colleagues and friends as they've wrestled with these same questions. It hasn't been easy for anyone; some have become quite bitter.
   </p>
 
   <p>
-    These are the questions that I imagine the Twitter alums are dealing with right now. It won't be easy for them, either. But this is a necessary step in the career for anyone who wants to arrange electrons for a living. Because the things we make, and the way we express our creativity, none of it is tangible. It can all go away with the press of a button. And we have to face that part of the bargain with our eyes open. Making something lasting of our lives is difficult, and very few of us will ever do it. But making something lasting with electrons? It might be damn near impossible.
+    I imagine these same questions are what the Twitter alums are dealing with right now. It will be difficult for them, too. But this is a necessary step in the career for anyone who wants to arrange electrons for a living. Because the things we make, the ways we express our creativity, none of it is tangible. It can all go away with the press of a button. And we have to face that part of the bargain with our eyes open. Making something lasting of our lives is difficult, and very few of us will ever do it. But making something lasting with electrons? It might be damn near impossible.
   </p>
 
     <figure class="post__image post__image--center">
