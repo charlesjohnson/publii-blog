@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2022-12-20T21:39:06-08:00</updated>
+    <updated>2023-01-01T19:13:33-08:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -21,7 +21,7 @@
             <category term="DevOps"/>
             <category term="Cloud"/>
 
-        <updated>2022-12-20T21:39:06-08:00</updated>
+        <updated>2023-01-01T19:13:33-08:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/4/IMG_8245-2.PNG" alt="" />
@@ -62,12 +62,16 @@
     </figure>
 
   <p>
-    In 2005, I helped launch a cell phone company with a revolutionary idea: They had an app store that sold movies, TV shows, music, games, and communication tools, all from the handset. It seems passé now, but before iPhones, the concept was incredibly innovative. Unfortunately, they also tried to do it from clunky Kyocera slider phones. Amp'd couldn't even offer a Motorola RAZR for their first year in business.
+    In 2005, I helped launch a cell phone company with a revolutionary idea: They had an app store that sold movies, TV shows, music, games, and communication tools, all from the handset. It seems passé now, but before iPhones, the concept was incredibly innovative. Unfortunately, they also tried to do it from clunky Kyocera slider phones.&nbsp;Amp'd couldn't even offer customers a Motorola RAZR for their first year in business.
   </p>
 <div><div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/4yuiIew6Lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 
   <p>
-    As the lead systems admin on their infrastructure, I routinely put in 80-hour weeks with 24/7 on-call. I spent days sleeping on cots in warehouse data centers and eating fast food in the conference room, never seeing the sun while we racked giant SAN clusters and live-migrated data. I wrote tooling and put the best of my creativity and life into the project. Get me in the right mood, and I might tell you the story about being wrecked out of my mind at a New Year's Eve party with a half-dozen other sysadmin friends, all of us slurring into a speakerphone at a poor NOC technician about how to kill and safely restart a desynched JBoss cluster.
+    To say it didn't work out is an understatement. AMP'd Mobile burned through $350M of investor cash in less than two years, arguably the last significant failure of the first .com era.
+  </p>
+
+  <p>
+    As the lead systems admin on their infrastructure, I routinely put in 80-hour weeks with 24/7 on-call. I spent days sleeping on cots in warehouse data centers and eating fast food in the conference room, never seeing the sun while we racked giant SAN clusters and live-migrated data. I wrote new tooling to solve problems nobody else had ever solved before, putting the best of my creativity and life into the project. Get me in the right mood, and I might tell you the story about being wrecked out of my mind at a New Year's Eve party with a half-dozen other sysadmin friends, all of us slurring into a speakerphone at a poor NOC technician about how to kill and safely restart a desynched JBoss cluster.
   </p>
 
   <p>
@@ -75,7 +79,7 @@
   </p>
 
   <p>
-    To say it didn't work out is an understatement. AMP'd Mobile burned through $350M of investor cash in less than two years, arguably the last significant failure of the first .com era. One day, they stopped paying their bills, so we just... turned the servers off and never turned them back on. All of the best work of my young career went away with a shutdown command.
+    One day, they stopped paying their bills, so we just... turned the servers off and never turned them back on. All of the best work of my young career went away with a shutdown command.
   </p>
 
     <figure class="post__image post__image--center">
