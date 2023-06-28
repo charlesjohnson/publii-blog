@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2023-01-01T19:13:33-08:00</updated>
+    <updated>2023-06-28T11:21:01-07:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -122,11 +122,11 @@
             <category term="Cloud"/>
             <category term="AWS"/>
 
-        <updated>2022-11-10T11:13:20-08:00</updated>
+        <updated>2023-06-28T11:21:01-07:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" alt="Abandoned computer equipment" />
-                    (This post started life as a Twitter thread.) There's a blog post by DHH that's getting lots of traction lately about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He&hellip;
+                    (This post started life as a Twitter thread.) DHH has been getting lots of recent traction with a blog post about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -138,15 +138,15 @@
   </p>
 
   <p>
-    There's a blog post by DHH that's getting lots of traction lately about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He says some things that seem so stunningly obvious to me they're not worth talking about, but he managed to get 1,000 words, countless page views, and a 30-minute podcast out of it, so hey! I guess maybe it is worth talking about!
+    DHH has been getting lots of recent traction with a blog post about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He says some things that seem so stunningly obvious to me they're not worth talking about, but he managed to get 1,000 words, countless page views, and a 30-minute podcast out of it, so hey! I guess maybe it is worth some discussion!
   </p>
 
   <p>
-    Here's your tl;dr: The folks at 37signals have predictable workloads and a lot of in-house expertise around running servers &amp; networks in a data center. So they ran the numbers and figured out they'd save a lot of money by moving all of their applications out of the cloud and onto self-managed infrastructure.&nbsp;
+    Here's your tl;dr: The folks at 37signals have predictable workloads and a lot of in-house expertise around running servers &amp; networks in a data center. So they ran the numbers and figured out they'd save a lot of money by moving their applications out of the cloud and onto self-managed infrastructure. 
   </p>
 
   <p>
-    That's it. That's the tweet. But DHH presents this as a stunning revelation when in reality, it's... Yeah? No shit? You can use excel; congratulations. If I knew this silly little thought would blow minds, I'd have been saying it louder through the years.
+    That's it. That's the tweet. But DHH presents this as a stunning revelation when in reality, it's... Yeah? No shit? You can use Excel; congratulations. If I knew this silly little thought would blow minds, I'd have been saying it louder through the years.
   </p>
 
   <p>
@@ -154,7 +154,7 @@
   </p>
 
   <p>
-    The barriers to creating a thing on the internet used to be enormous and expensive until the cloud tore those obstacles down. As a result, the number of people running workloads on the internet is many, many times greater than it was when, as DDH put it, "Everyone &amp; their dog [ran infrastructure] to get the internet off the ground."
+    The barriers to creating a thing on the internet used to be enormous and expensive until the cloud tore those obstacles down. As a result, the number of people running workloads on the internet is many, many times greater than it was when, as DHH put it, "Everyone &amp; their dog [ran infrastructure] to get the internet off the ground."
   </p>
 
   <p>
@@ -167,11 +167,15 @@
     </figure>
 
   <p>
-    In a recent article, Charity Majors <a href="https://www.honeycomb.io/blog/future-ops-platform-engineering" target="_blank">wrote about the bifurcation of infrastructure engineering and operations engineering</a>. Infrastructure engineering is commoditizing because every company needs it, and no company can differentiate on it. On the other hand, operations engineering is getting a new name because we're technologists,&nbsp;<i style="font-weight: bold;">that's what we do here,</i>&nbsp;and we seem to have settled on Platform Engineering. Because infrastructure commoditization makes sense, while platform engineering remains mostly bespoke, the tides of economic inevitability crashed. Someone figured out they could build a tollgated API between the roles as they decoupled, and we call that API the cloud.
+    In a recent article, Charity Majors <a href="https://www.honeycomb.io/blog/future-ops-platform-engineering" target="_blank">wrote about the bifurcation of infrastructure engineering and operations engineering</a>. Infrastructure engineering is commoditizing because every company needs it, and no company can differentiate on it. DevOps isn't dead, it's alive and well, and you can buy it off the shelf.
   </p>
 
   <p>
-    To put it another way: Running servers? As Jeff Barr says, that's <a href="https://aws.amazon.com/blogs/aws/we_build_muck_s/" target="_blank">undifferentiated heavy lifting</a>. But running my site and services? You bet your ass that my company runbook is a trade secret.
+    On the other hand, Operations Engineering is getting a new name because we're technologists, <i style="font-weight: bold;">that's what we do here, </i>and we&nbsp;seem to have settled on Platform Engineering. Because <s>Operations</s> Platform Engineering remains mostly bespoke, while Infrastructure Engineering has commoditized, the tides of economic inevitability crashed. Someone figured out that as the roles decoupled, they could build a tollgated API between the two roles, and make a lot of money.&nbsp;We call that tollgate API the cloud.
+  </p>
+
+  <p>
+    To put it another way: Running servers? As Jeff Barr says, that's <a href="https://aws.amazon.com/blogs/aws/we_build_muck_s/" target="_blank">undifferentiated heavy lifting</a>. But running my site and services? You bet your ass that company runbook is a trade secret.
   </p>
 
   <p>
@@ -183,7 +187,7 @@
   </p>
 
   <p>
-    These are <i>superpowers.</i>&nbsp;It is <i>awesome</i>.&nbsp;DevOps isn't dead, it's alive and well, and you can buy it off the shelf.
+    These are <i>superpowers.</i>&nbsp;It is <i>awesome</i>.
   </p>
 
   <p>
@@ -208,7 +212,7 @@
   </p>
 
   <p>
-    Doing commoditized things in-house makes sense at some scales. But it's not a political act; it's an economic one. Don't let nostalgia for the days when you kept the dark magicks of <code>make installworld</code> for yourself convince you otherwise.
+    Doing commoditized things like Infrastructure Engineering in-house makes sense at some scales. But it's not a political act; it's an economic one. Don't let nostalgia for the days when you kept the dark magicks of <code>make installworld</code> for yourself convince you otherwise.
   </p>
             ]]>
         </content>
