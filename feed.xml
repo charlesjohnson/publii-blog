@@ -3,12 +3,71 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2024-05-20T14:48:59-07:00</updated>
+    <updated>2026-02-18T09:49:11-07:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
     <id>https://blog.chipjohnson.net</id>
 
+    <entry>
+        <title>Clarity Is the New Bottleneck</title>
+        <author>
+            <name>Chip Johnson</name>
+        </author>
+        <link href="https://blog.chipjohnson.net/clarity-is-the-new-bottleneck.html"/>
+        <id>https://blog.chipjohnson.net/clarity-is-the-new-bottleneck.html</id>
+        <media:content url="https://blog.chipjohnson.net/media/posts/8/screenshot.png" medium="image" />
+            <category term="WebGL"/>
+            <category term="Product Management"/>
+            <category term="D&amp;D"/>
+            <category term="Claude Code"/>
+            <category term="Claude"/>
+
+        <updated>2026-02-18T09:49:11-07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://blog.chipjohnson.net/media/posts/8/screenshot.png" alt="A hit!" />
+                    This week, I built a 3D physics simulation that runs in the browser. True, I’ve never used WebGL or touched Three.js, but the point isn’t that AI can write code. The point is that product intent now compiles. It started as a dare. Monday was&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.chipjohnson.net/media/posts/8/screenshot.png" class="type:primaryImage" alt="A hit!" /></p>
+                <p><span style="font-weight: 400;">This week, I built a 3D physics simulation that runs in the browser. True, I’ve never used WebGL or touched Three.js, but the point isn’t that AI can write code. The point is that product intent now compiles.</span></p>
+<p><span style="font-weight: 400;">It started as a dare.</span></p>
+<p><span style="font-weight: 400;">Monday was game night. Cards were dealt, evil cultists were sacrificed, and afterward my friend Eric and I got to talking about Claude Code. He used to work in tech and got out before the AWS era. I tried to explain what it feels like if you’ve been around long enough to remember running </span><code><span style="font-weight: 400;">knife ec2 server create</span></code><span style="font-weight: 400;"> in 2011 and getting a working web server up in four minutes for $0.65. Or publishing a HyperCard deck to the web in 1993 </span><i><span style="font-weight: 400;">for free</span></i><span style="font-weight: 400;"> and linking it to someone else’s </span><i><span style="font-weight: 400;">without asking</span></i><span style="font-weight: 400;">. It feels like one of those moments when the cost of building something drops to near zero.</span></p>
+<p><span style="font-weight: 400;">He was rightly skeptical. So I said, "If you've got an hour, we'll have a working prototype. Pick something."</span></p>
+<p><span style="font-weight: 400;">We decided on a virtual dice tower. I fired up Claude with the Superpowers plugin, and we invoked the Brainstorm skill. Eric wasn’t expecting me to go hard, but what I described to the 'bot was a 3D dice tower where polyhedra tumble through baffles and land in a tray at the bottom. Real rigid-body physics. Particle effects on NAT20’s. Sound. The full experience.</span></p>
+<p><span style="font-weight: 400;">Yeah, I was showing off. But also, I wanted to see what would happen.</span></p>
+<h1>The Interview</h1>
+<p><span style="font-weight: 400;">The</span><a href="https://github.com/obra/superpowers"><span style="font-weight: 400;"> </span><span style="font-weight: 400;">Superpowers</span></a><span style="font-weight: 400;"> plugin is an agentic development framework by <a href="https://github.com/obra">Jesse Vincent</a>. When you start a project, Superpowers doesn't let Claude just start writing code in response to your prompts. It interviews you first.</span></p>
+<p><span style="font-weight: 400;">And the interview is </span><i><span style="font-weight: 400;">good</span></i><span style="font-weight: 400;">. It asked about the tower's visual style and proposed a stone-dungeon aesthetic, which I rejected. I wanted bone ivory, something eerie. It asked about camera movement and which dice types to model. It suggested the standard D&amp;D set and made sure I knew that, for a D100 roll, it would throw 2d10 and model one of them as a percentile die. In fact, Claude is the one who came up with the idea to add special effects to Natty 20’s and Nat 1’s.</span></p>
+<p><span style="font-weight: 400;">These are </span><strong>product questions</strong><span style="font-weight: 400;">. They’re the kind of questions I'd expect from a sharp engineer pushing back on my loose “showing off to a buddy” spec. Claude asked them before writing a single line of code, then produced a design document broken into sections small enough for us to actually review.</span></p>
+<p><span style="font-weight: 400;">Eric and I read it over, made some edits, talked them through, and then I approved the spec. Claude built a parallelized implementation plan. Then it started building.</span></p>
+<p><span style="font-weight: 400;">The prototype was ready in about 30 minutes. We opened the browser, clicked the “roll” button, and for about 3 seconds everything was magic. Then the dice passed through the tower walls and promptly fell into infinite nothingness.</span></p>
+<p><span style="font-weight: 400;">There were lots of bugs, of course. It was the first compile, but the bones were there. Eric was convinced.</span></p>
+<h1><strong>The Part Where It Got Hard</strong></h1>
+<p><span style="font-weight: 400;">The easy stuff was, genuinely, easy. Claude scaffolded a Vite-powered TypeScript project, wired up Three.js for rendering and cannon-es for physics, built the tower geometry, lit the scenes, created all seven dice types, added particle effects for special rolls, and hooked up rudimentary sound effects. I directed. Claude built.</span></p>
+<p><span style="font-weight: 400;">Superpowers also enforces test-driven development. Real red-green-refactor, the kind teams talk about and rarely sustain. Claude doesn’t pay lip service, it just does it. Not all the tests are perfect, but an executable definition of success gates every change. That still didn’t save us.</span></p>
+<p><span style="font-weight: 400;">When it was time to start smashing bugs, things got frustrating. Physics tuning was a whack-a-mole nightmare. Dice would fall through one baffle but get stuck on another. I'd tell Claude to fix the collision on baffle three, and it would overcorrect, breaking baffle one. We went back and forth for a while, me describing symptoms and Claude adjusting parameters, never quite converging on anything that worked consistently.</span></p>
+<p><span style="font-weight: 400;">Finally, I stopped describing symptoms and started defining acceptance criteria.</span></p>
+<p><span style="font-weight: 400;">"We’re wasting a lot of time chasing individual failures,” I told Claude. "Instead, write an end-to-end test: Dice enter the top of the tower, and dice arrive in the tray at the bottom. That's it. Iterate until you pass the test 40 times in a row."</span></p>
+<p><span style="font-weight: 400;">Claude wrote the test.</span></p>
+<p><span style="font-weight: 400;">Then it cheated.</span></p>
+<p><span style="font-weight: 400;">It set the friction coefficient to zero, turning the tower interior into a frictionless slide. Dice went in the top. Dice arrived in the tray. The test passed. But the dice didn't </span><i><span style="font-weight: 400;">roll</span></i><span style="font-weight: 400;">, they just slid down like they were on ice.</span></p>
+<p><span style="font-weight: 400;">So I added another constraint: Dice must rotate a minimum number of times while in the tower. Claude solved </span><i><span style="font-weight: 400;">this</span></i><span style="font-weight: 400;"> by making the dice spring-loaded, leaping unrealistically as if they had been shocked every time they touched a baffle. I had to go around a few times before finding a balance that worked.</span></p>
+<p><span style="font-weight: 400;">But I did.</span></p>
+<h1>Defining Success</h1>
+<p><span style="font-weight: 400;">The</span><a href="https://github.com/charlesjohnson/arcane-dice-tower/" title="Arcane Dice Tower" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;"> </span><span style="font-weight: 400;">Arcane Dice Tower</span></a><span style="font-weight: 400;"> is a progressive web app you can install on your phone or run in a browser. It supports the standard D&amp;D dice set, D4 through D100, with real rigid-body physics, camera tracking, critical hit animations for D20 rolls, and a die inspector.</span></p>
+<p><span style="font-weight: 400;">It is not perfect. The D10 geometry is messed up. The D6 doesn't roll enough. The camera tracks a little too slowly. If you put enough dice in the tower, some of them spill out into the void. The lighting needs work. The bone-ivory aesthetic came out looking like a weird purple.</span></p>
+<p><span style="font-weight: 400;">It has bugs, and I'm sharing it anyway. The point is that it exists at all.</span></p>
+<p><span style="font-weight: 400;">That application took six hours across less than a week. I have no experience with WebGL, the underlying node libraries, physics simulation, or 3D geometry. I didn’t grind through framework documentation, and full disclosure, I still don’t know what a quaternion is. The code came easy; initial implementation wasn’t the bottleneck.</span></p>
+<p><span style="font-weight: 400;">Defining “Working” was.</span></p>
+<p><span style="font-weight: 400;">When the dice slid frictionless into the tray, the tests passed. When they bounced around like electrified rubber balls, the tests passed, too. But it still wasn’t right. What took time was deciding what success looked like.</span></p>
+<p><span style="font-weight: 400;">That wasn’t the system’s fault; it was mine. Claude did exactly what I asked it to do and optimized the constraints I defined. When implementation is cheap, clarity becomes the bottleneck.</span></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Migrating Publii from a GitHub Pages connection to Git</title>
         <author>
@@ -21,8 +80,8 @@
             <category term="GitHub"/>
             <category term="Bug Hunting"/>
 
-        <updated>2024-05-20T12:22:25-07:00</updated>
-            <summary>
+        <updated>2024-05-20T13:22:25-06:00</updated>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/5/Fresh-idea.png" alt="An octopus cat hybrid freaking out a table of people" />
                     I fired up Publii for the first time in a while today. I wanted to blog about a technical problem that was niche enough that an article might help the next person who runs into it. Instead, I found myself solving a sort-of-obtuse Publii issue,&hellip;
@@ -144,8 +203,8 @@
             <category term="DevOps"/>
             <category term="Cloud"/>
 
-        <updated>2022-12-18T11:36:37-08:00</updated>
-            <summary>
+        <updated>2022-12-18T12:36:37-07:00</updated>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/4/IMG_8245-2.PNG" alt="" />
                     Say what you will about Twitter and its impact on our culture, but you can't deny that the people building it acted with passion and care. Since the end of October, when the company was bought out and taken private, those creators have watched helplessly&hellip;
@@ -245,8 +304,8 @@
             <category term="Cloud"/>
             <category term="AWS"/>
 
-        <updated>2022-11-08T17:48:13-08:00</updated>
-            <summary>
+        <updated>2022-11-08T18:48:13-07:00</updated>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://blog.chipjohnson.net/media/posts/3/A772A922-B765-4B5D-AC88-CB46C4A215CA_1_105_c.jpeg" alt="Abandoned computer equipment" />
                     (This post started life as a Twitter thread.) DHH has been getting lots of recent traction with a blog post about how his company, 37signals, is abandoning the cloud. Because he's DHH, this becomes a long rant about self-reliance and cutting out predatory middlemen. He&hellip;
@@ -351,8 +410,8 @@
             <category term="Harbor Bay Club"/>
             <category term="Alameda"/>
 
-        <updated>2022-11-05T18:28:47-07:00</updated>
-            <summary>
+        <updated>2022-11-05T19:28:47-06:00</updated>
+            <summary type="html">
                 <![CDATA[
                     I'm going over my ballot for this November, and I thought writing a voter guide might be an excellent way to get my thoughts in order about the election. This post is 100% inspired by/blatantly aping David Glasser's awesome voter guides. I stole a lot&hellip;
                 ]]>
