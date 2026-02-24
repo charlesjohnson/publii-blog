@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2026-02-24T11:29:42-07:00</updated>
+    <updated>2026-02-24T11:33:49-07:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -46,7 +46,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/bottlenecks-2.png" height="1000" width="1238" alt="1. Environment Creation.  2. Code Deployment.  3. Tessting.  4. Architecure.  5. Ideas. You want to be at 5."  sizes="100vw" srcset="file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/responsive/bottlenecks-2-xs.webp 300w ,file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/responsive/bottlenecks-2-sm.webp 480w ,file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/responsive/bottlenecks-2-md.webp 768w ,file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/responsive/bottlenecks-2-lg.webp 1024w ,file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/responsive/bottlenecks-2-xl.webp 1360w ,file:///Users/chip/Documents/Publii/sites/chip-blogs-things/input/media/posts/temp/responsive/bottlenecks-2-2xl.webp 1600w">
+      <img loading="lazy" src="https://blog.chipjohnson.net/media/posts/9/bottlenecks.png" height="1000" width="1238" alt="1. Environment Creation.  2. Code Deployment.  3. Tessting.  4. Architecure.  5. Ideas. You want to be at 5."  sizes="100vw" srcset="https://blog.chipjohnson.net/media/posts/9/responsive/bottlenecks-xs.webp 300w ,https://blog.chipjohnson.net/media/posts/9/responsive/bottlenecks-sm.webp 480w ,https://blog.chipjohnson.net/media/posts/9/responsive/bottlenecks-md.webp 768w ,https://blog.chipjohnson.net/media/posts/9/responsive/bottlenecks-lg.webp 1024w ,https://blog.chipjohnson.net/media/posts/9/responsive/bottlenecks-xl.webp 1360w ,https://blog.chipjohnson.net/media/posts/9/responsive/bottlenecks-2xl.webp 1600w">
       <figcaption>The Five Predictable Bottlenecks of Softwaare Delivery, by Gene Kim.</figcaption>
     </figure>
 
