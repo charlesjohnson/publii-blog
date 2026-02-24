@@ -3,7 +3,7 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2026-02-24T11:33:49-07:00</updated>
+    <updated>2026-02-24T11:35:22-07:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
@@ -62,17 +62,17 @@
       The Bottlenecks Explained
     </h2>
 
-  <p>
-    <b>Environments</b>
-  </p>
+    <h2 id="environments">
+      Environments
+    </h2>
 
   <p>
     At the first bottleneck, your teams are stuck waiting for environments. Somebody has to provision the infrastructure, configure DNS, file a ticket to open the firewall, and wait. The fix to this is on-demand environment creation: press the button, get a runtime, whether dev, staging, or prod. Automate creation. Make new ones all the time, throw away the old ones. Make it self-service. Move on.
   </p>
 
-  <p>
-    <b>Deployment</b>
-  </p>
+    <h2 id="deployment">
+      Deployment
+    </h2>
 
   <p>
     Next is deployment. Once you can create environments, you’ll likely realize pushing code to them is its own nightmare. Too many steps, too many handoffs, too many pieces to coordinate. Kim emphasizes that teams should build their deployments as a single-piece flow.<br>
@@ -98,25 +98,25 @@
     On the web, each session runs in its own sandboxed environment, isolated by design. Same principle. Different mechanism.<br>
   </p>
 
-  <p>
-    <b>Testing</b>
-  </p>
+    <h2 id="testing">
+      Testing
+    </h2>
 
   <p>
     You're deploying fast, but you're shipping bugs faster. Every change surface needs a test. You need confidence that what you shipped actually works. They need to be the right tests, and they need to be fast.
   </p>
 
-  <p>
-    <b>Architecture</b>
-  </p>
+    <h2 id="architecture">
+      Architecture
+    </h2>
 
   <p>
     Congratulations! You've got tests, fast deploys, and on-demand runtimes for every work context. Now the codebase itself is the problem. Tech debt accumulates. Components become so tightly coupled that changing one thing breaks three others. You need to pay this all down regularly and keep things loosely coupled enough so the system can evolve.
   </p>
 
-  <p>
-    <b>Ideas</b>
-  </p>
+    <h2 id="ideas">
+      Ideas
+    </h2>
 
   <p>
     Here is where Kim says the bottleneck should be. When environments spin up on demand, deployments are trivial, tests are fast and comprehensive, and architecture is clean, the limiting factor becomes how fast humans can come up with good things to build. The speed of ingenuity.<br>
@@ -143,9 +143,9 @@
     The bottlenecks are the same. The order is the same. And if you don't address them, you'll stall in the same places, no matter how advanced the model writing your code.
   </p>
 
-  <p>
-    <b>Environment Creation</b>
-  </p>
+    <h2 id="environment-creation">
+      Environment Creation
+    </h2>
 
   <p>
     Claude Code on the web can see your repo and push branches. But if you can’t actually see what it builds, you’ve got a bottleneck. The goal is a preview environment for every PR.
@@ -159,9 +159,9 @@
     The specifics depend on your stack, but the principle doesn’t. Regardless of how you run your coding agent, when it finishes a task and pushes a branch, you should be able to see the result running somewhere real, with a full copy of the stack, and full resource isolation. If that’s not the case, fix that first. Everything downstream depends on it.
   </p>
 
-  <p>
-    <b>Code Deployment</b>
-  </p>
+    <h2 id="code-deployment">
+      Code Deployment
+    </h2>
 
   <p>
     Once your preview environments exist, the question becomes, how does code get there? The answer should be the same code pipeline that deploys to production. Same mechanism, same gates, every time. A push to a branch triggers a preview. A merge to main triggers staging. A tagged release triggers production. The same code deploys it all, the only difference is the target.<br>
@@ -183,9 +183,9 @@
     Your deployment pipeline will need to support concurrent builds without shared state between resources. If your automation can’t handle multiple simultaneous pushes to dev environments without choking, that’s the bottleneck.
   </p>
 
-  <p>
-    <b>Testing</b>
-  </p>
+    <h2 id="testing">
+      Testing
+    </h2>
 
   <p>
     As I wrote in <a href="https://blog.chipjohnson.net/clarity-is-the-new-bottleneck.html" target="_blank">my last post</a>, Jesse Vincent's <a href="https://github.com/obra/superpowers" title="Superpowers" target="_blank">Superpowers</a> plugin enforces real red-green-refactor test-driven development. Every change gets an executable definition of success before implementation starts.
@@ -203,9 +203,9 @@
     More than any other part of an agent-authored pull request, inspect the tests. Make sure they’re testing something that matters. You decide what’s meaningful, the agent writes the tests, and your CI infrastructure runs them.
   </p>
 
-  <p>
-    <b>Architecture</b>
-  </p>
+    <h2 id="architecture">
+      Architecture
+    </h2>
 
   <p>
     Here's where agentic coding colliding with DevOps philosophy gets interesting and dangerous.
@@ -231,9 +231,9 @@
     Use Superpowers’ <a href="https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/SKILL.md" title="GitHub" target="_blank">requesting-code-review</a> skill regularly. Ask Claude to explain why it touched files that seem unrelated to the task. If the answer is "because everything is connected to everything," that's your signal. Pay the debt while you can still afford it.
   </p>
 
-  <p>
-    <b>The Speed of Ideas</b>
-  </p>
+    <h2 id="the-speed-of-ideas">
+      The Speed of Ideas
+    </h2>
 
   <p>
     If you’ve solved environments, deployment, testing, and architecture, you’re here. This is where you want to be.
