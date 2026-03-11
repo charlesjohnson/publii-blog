@@ -3,12 +3,168 @@
     <title>Chip Blogs Things</title>
     <link href="https://blog.chipjohnson.net/feed.xml" rel="self" />
     <link href="https://blog.chipjohnson.net" />
-    <updated>2026-02-24T14:10:39-07:00</updated>
+    <updated>2026-03-11T10:29:25-06:00</updated>
     <author>
         <name>Chip Johnson</name>
     </author>
     <id>https://blog.chipjohnson.net</id>
 
+    <entry>
+        <title>Should This Spec Even Exist?</title>
+        <author>
+            <name>Chip Johnson</name>
+        </author>
+        <link href="https://blog.chipjohnson.net/should-this-spec-even-exist.html"/>
+        <id>https://blog.chipjohnson.net/should-this-spec-even-exist.html</id>
+        <media:content url="https://blog.chipjohnson.net/media/posts/10/Ikea-furniture-assembly-service-ads-oops.jpeg" medium="image" />
+            <category term="Product Strategy"/>
+            <category term="Product Management"/>
+            <category term="GitHub"/>
+            <category term="DevOps"/>
+            <category term="Claude Code"/>
+
+        <updated>2026-03-10T16:34:22-06:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://blog.chipjohnson.net/media/posts/10/Ikea-furniture-assembly-service-ads-oops.jpeg" alt="IKEA furniture built incorrectly to spell the word &quot;OOPS&quot;" />
+                    Product Strategy in the Age of Reasoning Machines In Clarity Is the New Bottleneck, I built a 3D physics simulation with no experience in the underlying tech and discovered the hard part wasn't getting to working code. The hard part was defining what "working" meant.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.chipjohnson.net/media/posts/10/Ikea-furniture-assembly-service-ads-oops.jpeg" class="type:primaryImage" alt="IKEA furniture built incorrectly to spell the word &quot;OOPS&quot;" /></p>
+                
+  <p>
+    <i>Product Strategy in the Age of Reasoning Machines</i>
+  </p>
+
+  <p>
+    In <a href="https://blog.chipjohnson.net/clarity-is-the-new-bottleneck.html">Clarity Is the New Bottleneck</a>, I built a 3D physics simulation with no experience in the underlying tech and discovered the hard part wasn't getting to working code. The hard part was defining what "working" meant. In <a href="https://blog.chipjohnson.net/what-devops-already-knew-about-ai-development.html">What DevOps Already Knew</a>, I argued that you should make sure the bottleneck stays where Gene Kim said it belongs: the speed of ideas, not trapped behind infrastructure and process.&nbsp;
+  </p>
+
+  <p>
+    Both of those posts were circling the same idea.&nbsp;DevOps moved the delivery bottleneck up the stack. AI is now doing doing the same thing to product work. When implementation is cheap and the delivery system is well structured, the real constraint becomes knowing what to build.<br>
+  </p>
+
+  <p>
+    But much of the current conversation about creating with AI is looking for that clarity in the wrong place.
+  </p>
+
+    <h2 id="the-product-engineer-moment">
+      The "Product Engineer" Moment
+    </h2>
+
+  <p>
+    Over the past few months a phrase keeps resurfacing in engineering circles: <i>product engineer.</i>
+  </p>
+
+  <p>
+    The argument goes something like this: AI tools generate working code so quickly that implementation is no longer the bottleneck. If writing software gets easier, engineers need to think more about product and design. Engineers who can move fluidly between those concerns become “product engineers.”  <a href="https://www.jampa.dev/p/the-rise-of-one-pizza-engineering" title="The Rise of One-Pizza Engineering Teams" target="_blank">Jampa Uchoa's essay on one-pizza engineering</a> captures the trend well.
+  </p>
+
+  <p>
+    The observation behind this idea isn’t wrong. A single person with AI tools can now prototype and ship systems that used to take a team and months of coordination. When that happens, a traditional product handoff starts to look like friction. If a product manager is still translating ideas into specifications for engineering to implement, they’re now the slowest part of the pipeline.
+  </p>
+
+  <p>
+    From that perspective, the conclusion seems obvious: engineers should absorb that translation layer themselves and run the interface between product thinking and implementation directly.
+  </p>
+
+    <h2 id="the-product-work-engineers-see">
+      The Product Work Engineers See
+    </h2>
+
+  <p>
+    When engineers talk about “thinking like a product manager,” they usually mean the work closest to engineering: writing specs, clarifying requirements, translating customer feedback into tasks, deciding between technical approaches, scoping features.
+  </p>
+
+  <p>
+    I see this firsthand. I am interviewing heavily right now, and this is exactly what people ask about. How do I decide what goes into a PRD? How do I turn customer feedback into engineering work? That I am still getting those questions makes sense. The shift in the software development lifecycle is still very new. But what has changed is how little of that work now requires human effort.
+  </p>
+
+  <p>
+    Once a problem is framed clearly enough, with a clear goal, real constraints, and meaningful success criteria, tools like <a href="https://github.com/obra/superpowers" title="Superpowers GitHub Repo" target="_blank">Superpowers</a> cut the time to a valid specification, plan, and task breakdown to hours or even minutes. The translation step that once required hours of writing, meetings, and iteration is now happening within the tool.
+  </p>
+
+  <p>
+    What goes into the spec isn’t why you hire a product manager. Not anymore. The reason you hire a product manager is to answer a much more important question:
+  </p>
+
+  <p>
+    <b><i>Should this spec even exist?</i></b>
+  </p>
+
+    <h2 id="the-work-before-the-speclessbrgreater">
+      The Work Before the Spec<br>
+    </h2>
+
+  <p>
+    Someone has to decide which problems deserve to be on the roadmap at all.
+  </p>
+
+  <p>
+    That means understanding which customer problems need solving right now. It means knowing how those problems connect to the broader direction of the product and the business. It means saying no to the twelve things that are technically feasible and interesting but strategically irrelevant.
+  </p>
+
+  <p>
+    By the time a problem reaches a spec document, upstream decision-making has already shaped what the team is allowed to even consider.
+  </p>
+
+  <p>
+    Engineers rarely see this work. From where they sit, the problem appears to have arrived fully formed. In reality, someone fought for it, traded it against five other priorities, and connected it to a business outcome that justified the investment.
+  </p>
+
+    <h2 id="a-framework-for-where-decisions-livelessbrgreater">
+      A Framework for Where Decisions Live<br>
+    </h2>
+
+  <p>
+    Melissa Perri's <a href="https://www.oreilly.com/library/view/escaping-the-build/9781491973783/" title="Escaping the Build Trap" target="_blank">Escaping the Build Trap</a> describes product strategy as a stack of connected decisions, each answering a different question about direction, customers, and execution.&nbsp;Each layer ensures that what teams build connects to the outcomes the business actually needs.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://blog.chipjohnson.net/media/posts/10/Untitled-2026-03-10-1643.png" height="1090" width="1040" alt=""  sizes="100vw" srcset="https://blog.chipjohnson.net/media/posts/10/responsive/Untitled-2026-03-10-1643-xs.webp 300w ,https://blog.chipjohnson.net/media/posts/10/responsive/Untitled-2026-03-10-1643-sm.webp 480w ,https://blog.chipjohnson.net/media/posts/10/responsive/Untitled-2026-03-10-1643-md.webp 768w ,https://blog.chipjohnson.net/media/posts/10/responsive/Untitled-2026-03-10-1643-lg.webp 1024w ,https://blog.chipjohnson.net/media/posts/10/responsive/Untitled-2026-03-10-1643-xl.webp 1360w ,https://blog.chipjohnson.net/media/posts/10/responsive/Untitled-2026-03-10-1643-2xl.webp 1600w">
+      
+    </figure>
+
+  <p>
+    <i>(<a href="https://blog.chipjohnson.net/what-devops-already-knew-about-ai-development.html" target="_blank">If the shape of this diagram looks familiar, it should</a>. DevOps taught us that bottlenecks move upward in systems as we remove constraints. The same thing is now happening in product work.)</i>
+  </p>
+
+  <p>
+    Claude Code and similar tools dramatically accelerate the bottom of this stack. Generating product options is suddenly trivial. Prototypes appear overnight. Experiments that once required planning cycles now happen casually between other work. From an engineer's perspective, that change is obvious. The part of the product process they interact with most often, the translation layer between idea and implementation, gets easier every month.<br>
+  </p>
+
+  <p>
+    But the layers above that stack are what actually determine success.<br>
+  </p>
+
+  <p>
+    Which problems matter? Which customers matter? How does this connect to where the business needs to go? The real leverage of product work sits higher up. And because the cost of building is dropping just as fast for your competitors, the importance of choosing the right problems only increases.
+  </p>
+
+  <p>
+    The shift engineers are reacting to is real. But the version of product thinking they're adopting lives mostly at the bottom of the stack, the part AI is eating the fastest. The real leverage of product work sits higher up.
+  </p>
+
+    <h2 id="what-comes-next">
+      What Comes Next
+    </h2>
+
+  <p>
+    Over the next few posts, I’m going to unpack this stack, starting with the layers AI has changed the most: product initiatives and product options.
+  </p>
+
+  <p>
+    <a href="https://blog.chipjohnson.net/clarity-is-the-new-bottleneck.html">Clarity Is the New Bottleneck</a> is a story about what happens when you can build anything and the hard part is defining what “done” means.  <a href="https://blog.chipjohnson.net/what-devops-already-knew-about-ai-development.html">What DevOps Already Knew</a> is about making sure infrastructure doesn't re-bottleneck you before you reach the strategic layer. From here, we move upward to the decisions that determine whether all this new building power creates value or just lines of code.
+  </p>
+
+  <p>
+    As engineers start looking up the stack, product managers will have to make the strategy behind those decisions legible.<br>
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>What DevOps Already Knew About AI Development</title>
         <author>
